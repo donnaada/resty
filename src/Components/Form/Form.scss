@@ -1,14 +1,15 @@
-$backgroundColor: #efefef;
-$radius: 40%;
 
 form {
   display: inline-block;
-  margin: auto;
+  margin: 0 auto;
   width: 200px;
+
 
   label {
     display: flex;
     margin: 1rem 0;
+
+
 
     &.methods {
       span {
@@ -18,9 +19,12 @@ form {
         background: #ccc;
 
         &:hover, &.active {
-          background: #fff;
+          background: #29315A;
+          color: #fff;
         }
       }
     }
   }
 }
+
+

@@ -1,0 +1,11 @@
+@import '../../App.scss';
+
+header {
+  // background: darken($backgroundColor, 75);
+  background: #29315A;;
+  border-bottom: 1px solid #eee;
+  color: #eee;
+  padding: 0 3rem;
+  margin: 0;
+  text-align: left;
+}
