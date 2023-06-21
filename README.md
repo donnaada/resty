@@ -7,6 +7,7 @@
 ### Problem Domain  
 
 RESTy Phase 1: Begin work on the RESTy API testing application.
+RESTy Phase 2: Retrieving User Input and Managing State.
 
 #### Code Sandbox Links
 
