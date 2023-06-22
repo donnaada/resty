@@ -33,11 +33,14 @@ function App() {
       }
 
       if (reqMethod === 'POST') {
-        console.log('post method')
+        let reqBody = requestParams.body
+        console.log('post method', reqBody)
+
       }
 
       if (reqMethod === 'PUT') {
-        console.log('put method')
+        let reqBody = requestParams.body
+        console.log('put method', reqBody)
       }
 
       if (reqMethod === 'DELETE') {
