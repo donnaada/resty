@@ -17,7 +17,7 @@ function Form(props) {
       url: url,
       body: body
     };
-    console.log(formData);
+    // console.log(formData);
     props.handleApiCall(formData);
   }
 
@@ -28,7 +28,7 @@ function Form(props) {
   /**
    * Test APIs
       https://pokeapi.co/api/v2/pokemon
-      https://swapi.dev/api/people/1/
+      https://swapi.dev/api/people/
       https://rickandmortyapi.com/api/character
    */
 
