@@ -8,6 +8,7 @@
 
 RESTy Phase 1: Begin work on the RESTy API testing application.
 RESTy Phase 2: Retrieving User Input and Managing State.
+RESTy Phase 3: Connect RESTy with APIs, running live requests.
 
 #### Code Sandbox Links
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './App.scss';
 
@@ -16,12 +16,19 @@ function App() {
 
   let [data, setData] = useState(null);
   let [req, setReq] = useState(null);
-  let [res, setRes] = useState({});
+  let [response, setResponse] = useState({});
   let [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (data) {
+      console.log('data', data)
+    }
+  }, [data]);
+
 
   let callApi = async (requestParams) => {
     setData(null);
-    setRes({});
+    setResponse({});
 
     try {
       setLoading(true);
@@ -29,7 +36,7 @@ function App() {
       let reqMethod = requestParams.method;
 
       if (reqMethod === 'GET') {
-        res = await axios.get(url);
+        response = await axios.get(url);
       }
 
       if (reqMethod === 'POST') {
@@ -47,12 +54,12 @@ function App() {
         console.log('delete method')
       }
 
-      data = res;
-      setRes(res);
+      data = response;
+      setResponse(response);
       setData(data);
       setLoading(false);
 
-      console.log(data)
+      // console.log(data)
 
     } catch (error) {
       console.error(error);
@@ -65,7 +72,14 @@ function App() {
       <div>Request Method: {loading ? 'loading...' : !data ? '' : data.config.method}</div>
       <div>URL: {loading ? 'loading...' :  !data ? '' : data.config.url}</div>
       <Form req={req} setReq={setReq} handleApiCall={callApi} setLoading={setLoading}/>
-      <Results data={loading ? 'loading...' :  !data ? '' : data} />
+      <div style={{marginBottom:'auto'}}>
+        <h2>Data from API</h2>
+        {/* display loading if loading is true */}
+        { loading ? <h3 style={{fontStyle:'italic'}}>Loading...</h3> : ''}
+        
+        {/* display data if data is not null */}
+        { !loading && data ? <Results data={data} /> : 'No Current Data'}
+        </div>
       <Footer />
     </React.Fragment>
   );
