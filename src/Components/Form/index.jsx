@@ -11,13 +11,12 @@ function Form(props) {
   const handleSubmit = e => {
     method = method.toUpperCase();
     e.preventDefault();
-    props.setLoading(true);
     const formData = {
       method: method,
       url: url,
       body: body
     };
-    // console.log(formData);
+    console.log(formData);
     props.handleApiCall(formData);
   }
 

@@ -6,14 +6,17 @@
 
 ### Problem Domain  
 
-RESTy Phase 1: Begin work on the RESTy API testing application.
-RESTy Phase 2: Retrieving User Input and Managing State.
-RESTy Phase 3: Connect RESTy with APIs, running live requests.
+- RESTy Phase 1: Begin work on the RESTy API testing application.
+- RESTy Phase 2: Retrieving User Input and Managing State.
+- RESTy Phase 3: Connect RESTy with APIs, running live requests.
+- RESTy Phase 4: Track History.
 
 #### Code Sandbox Links
 
 - [Part 1/4 Link](https://codesandbox.io/p/github/donnaada/resty/base?workspaceId=ce71875d-ef6e-4f5c-a373-7db91650ae14)
 - [Part 2/4 Link](https://codesandbox.io/p/github/donnaada/resty/state?workspaceId=ce71875d-ef6e-4f5c-a373-7db91650ae14)
+- [Part 3/4 Link](https://codesandbox.io/p/github/donnaada/resty/effect-hook?workspaceId=ce71875d-ef6e-4f5c-a373-7db91650ae14)
+- [Part 4/4 Link](https://codesandbox.io/p/github/donnaada/resty/reducer-hook?workspaceId=ce71875d-ef6e-4f5c-a373-7db91650ae14)
 
 #### UML
 
